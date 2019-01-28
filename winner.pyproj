@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>winner</Name>
+    <RootNamespace>winner</RootNamespace>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>775e6809-d26d-48fc-b2d1-b5aa831e459c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>winner.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="aluno\urls.py" />
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="classe\admin.py" />
+    <Compile Include="classe\apps.py" />
+    <Compile Include="classe\migrations\__init__.py" />
+    <Compile Include="classe\models.py" />
+    <Compile Include="classe\tests.py" />
+    <Compile Include="classe\urls.py" />
+    <Compile Include="classe\views.py" />
+    <Compile Include="classe\__init__.py" />
+    <Compile Include="colaborador\admin.py" />
+    <Compile Include="colaborador\apps.py" />
+    <Compile Include="colaborador\migrations\__init__.py" />
+    <Compile Include="colaborador\models.py" />
+    <Compile Include="colaborador\tests.py" />
+    <Compile Include="colaborador\urls.py" />
+    <Compile Include="colaborador\views.py" />
+    <Compile Include="colaborador\__init__.py" />
+    <Compile Include="grupo\admin.py" />
+    <Compile Include="grupo\apps.py" />
+    <Compile Include="grupo\migrations\__init__.py" />
+    <Compile Include="grupo\models.py" />
+    <Compile Include="grupo\tests.py" />
+    <Compile Include="grupo\urls.py" />
+    <Compile Include="grupo\views.py" />
+    <Compile Include="grupo\__init__.py" />
+    <Compile Include="home\admin.py" />
+    <Compile Include="home\apps.py" />
+    <Compile Include="home\migrations\__init__.py" />
+    <Compile Include="home\models.py" />
+    <Compile Include="home\tests.py" />
+    <Compile Include="home\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="home\views.py" />
+    <Compile Include="home\__init__.py" />
+    <Compile Include="instituicao\admin.py" />
+    <Compile Include="instituicao\apps.py" />
+    <Compile Include="instituicao\migrations\__init__.py" />
+    <Compile Include="instituicao\models.py" />
+    <Compile Include="instituicao\tests.py" />
+    <Compile Include="instituicao\urls.py" />
+    <Compile Include="instituicao\views.py" />
+    <Compile Include="instituicao\__init__.py" />
+    <Compile Include="Procfile">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sistema_login\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="manage.py" />
+    <Compile Include="aluno\admin.py" />
+    <Compile Include="aluno\apps.py" />
+    <Compile Include="aluno\migrations\__init__.py" />
+    <Compile Include="aluno\models.py" />
+    <Compile Include="aluno\tests.py" />
+    <Compile Include="aluno\views.py" />
+    <Compile Include="aluno\__init__.py" />
+    <Compile Include="sistema_login\admin.py" />
+    <Compile Include="sistema_login\apps.py" />
+    <Compile Include="sistema_login\migrations\__init__.py" />
+    <Compile Include="sistema_login\models.py" />
+    <Compile Include="sistema_login\tests.py" />
+    <Compile Include="sistema_login\views.py" />
+    <Compile Include="sistema_login\__init__.py" />
+    <Compile Include="site\admin.py" />
+    <Compile Include="site\apps.py" />
+    <Compile Include="site\migrations\__init__.py" />
+    <Compile Include="site\models.py" />
+    <Compile Include="site\tests.py" />
+    <Compile Include="site\urls.py" />
+    <Compile Include="site\views.py" />
+    <Compile Include="site\__init__.py" />
+    <Compile Include="winner\__init__.py" />
+    <Compile Include="winner\settings.py" />
+    <Compile Include="winner\urls.py" />
+    <Compile Include="winner\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="classe\" />
+    <Folder Include="classe\migrations\" />
+    <Folder Include="classe\templates\" />
+    <Folder Include="classe\templates\classe\" />
+    <Folder Include="colaborador\" />
+    <Folder Include="colaborador\migrations\" />
+    <Folder Include="colaborador\templates\" />
+    <Folder Include="colaborador\templates\colaborador\" />
+    <Folder Include="grupo\" />
+    <Folder Include="grupo\migrations\" />
+    <Folder Include="grupo\templates\" />
+    <Folder Include="grupo\templates\grupo\" />
+    <Folder Include="home\" />
+    <Folder Include="home\migrations\" />
+    <Folder Include="home\static\" />
+    <Folder Include="home\static\css\" />
+    <Folder Include="home\static\img\" />
+    <Folder Include="home\static\img\icons\" />
+    <Folder Include="home\static\js\" />
+    <Folder Include="home\static\vendor\" />
+    <Folder Include="home\static\vendor\animate\" />
+    <Folder Include="home\static\vendor\animsition\" />
+    <Folder Include="home\static\vendor\animsition\css\" />
+    <Folder Include="home\static\vendor\animsition\js\" />
+    <Folder Include="home\static\vendor\bootstrap\" />
+    <Folder Include="home\static\vendor\bootstrap\css\" />
+    <Folder Include="home\static\vendor\bootstrap\js\" />
+    <Folder Include="home\static\vendor\countdowntime\" />
+    <Folder Include="home\static\vendor\css-hamburgers\" />
+    <Folder Include="home\static\vendor\daterangepicker\" />
+    <Folder Include="home\static\vendor\jquery\" />
+    <Folder Include="home\static\vendor\perfect-scrollbar\" />
+    <Folder Include="home\static\vendor\select2\" />
+    <Folder Include="home\templates\" />
+    <Folder Include="home\templates\home\" />
+    <Folder Include="instituicao\" />
+    <Folder Include="instituicao\migrations\" />
+    <Folder Include="instituicao\static\" />
+    <Folder Include="instituicao\static\images\" />
+    <Folder Include="instituicao\static\js\" />
+    <Folder Include="instituicao\static\plugins\" />
+    <Folder Include="instituicao\static\plugins\easing\" />
+    <Folder Include="instituicao\static\plugins\fontawesome-free-5.0.1\" />
+    <Folder Include="instituicao\static\plugins\fontawesome-free-5.0.1\css\" />
+    <Folder Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\" />
+    <Folder Include="instituicao\static\plugins\greensock\" />
+    <Folder Include="instituicao\static\plugins\OwlCarousel2-2.2.1\" />
+    <Folder Include="instituicao\static\plugins\parallax.js-2.0.0\" />
+    <Folder Include="instituicao\static\plugins\progressbar\" />
+    <Folder Include="instituicao\static\plugins\scrollmagic\" />
+    <Folder Include="instituicao\static\plugins\scrollTo\" />
+    <Folder Include="instituicao\static\styles\" />
+    <Folder Include="instituicao\static\styles\bootstrap4\" />
+    <Folder Include="instituicao\templates\" />
+    <Folder Include="instituicao\templates\instituicao\" />
+    <Folder Include="sistema_login\" />
+    <Folder Include="sistema_login\migrations\" />
+    <Folder Include="sistema_login\templates\" />
+    <Folder Include="sistema_login\templates\sistema_login\" />
+    <Folder Include="site\" />
+    <Folder Include="site\migrations\" />
+    <Folder Include="site\templates\" />
+    <Folder Include="site\templates\site\" />
+    <Folder Include="winner\" />
+    <Folder Include="aluno\" />
+    <Folder Include="aluno\migrations\" />
+    <Folder Include="aluno\templates\" />
+    <Folder Include="aluno\templates\aluno\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aluno\templates\aluno\busca_visualiza.html" />
+    <Content Include="aluno\templates\aluno\busca_edita.html" />
+    <Content Include="aluno\templates\aluno\edita.html" />
+    <Content Include="aluno\templates\aluno\novo.html" />
+    <Content Include="aluno\templates\aluno\visualizar.html" />
+    <Content Include="classe\templates\classe\busca_visualiza.html" />
+    <Content Include="classe\templates\classe\busca_edita.html" />
+    <Content Include="classe\templates\classe\visualiza_classe.html" />
+    <Content Include="classe\templates\classe\nova_classe.html" />
+    <Content Include="classe\templates\classe\edita_classe.html" />
+    <Content Include="colaborador\templates\colaborador\busca_edita.html" />
+    <Content Include="colaborador\templates\colaborador\busca_visualiza.html" />
+    <Content Include="colaborador\templates\colaborador\edita.html" />
+    <Content Include="colaborador\templates\colaborador\novo.html" />
+    <Content Include="colaborador\templates\colaborador\visualizar.html" />
+    <Content Include="grupo\templates\grupo\busca_edita.html" />
+    <Content Include="grupo\templates\grupo\edita_grupo.html" />
+    <Content Include="grupo\templates\grupo\nova_aula.html" />
+    <Content Include="grupo\templates\grupo\novo_grupo.html" />
+    <Content Include="home\static\css\main.css" />
+    <Content Include="home\static\css\simple-sidebar.css" />
+    <Content Include="home\static\css\util.css" />
+    <Content Include="home\static\img\bg-01.jpg" />
+    <Content Include="home\static\img\botao.png" />
+    <Content Include="home\static\img\caixa.png" />
+    <Content Include="home\static\img\fundo.jpg" />
+    <Content Include="home\static\img\chica_logo.png" />
+    <Content Include="home\static\img\cliente.png" />
+    <Content Include="home\static\img\cliente1.png" />
+    <Content Include="home\static\img\contas.png" />
+    <Content Include="home\static\img\delta_logo.png" />
+    <Content Include="home\static\img\e_produto.png" />
+    <Content Include="home\static\img\e_refeicao.png" />
+    <Content Include="home\static\img\favicon.ico" />
+    <Content Include="home\static\img\fechar.png" />
+    <Content Include="home\static\img\fundo_erro.jpg" />
+    <Content Include="home\static\img\fundo_login.jpg" />
+    <Content Include="home\static\img\hab_vencida.png" />
+    <Content Include="home\static\img\hab_vencida1.png" />
+    <Content Include="home\static\img\home.png" />
+    <Content Include="home\static\img\icons\favicon.ico" />
+    <Content Include="home\static\img\inf_geral.png" />
+    <Content Include="home\static\img\inf_men.png" />
+    <Content Include="home\static\img\inf_sem.png" />
+    <Content Include="home\static\img\logo.png" />
+    <Content Include="home\static\img\logo1.png" />
+    <Content Include="home\static\img\mais.png" />
+    <Content Include="home\static\img\mario_logo.png" />
+    <Content Include="home\static\img\novo_cliente.png" />
+    <Content Include="home\static\img\novo_cliente1.png" />
+    <Content Include="home\static\img\n_produto.png" />
+    <Content Include="home\static\img\n_refeicao.png" />
+    <Content Include="home\static\img\outros.png" />
+    <Content Include="home\static\img\pedidos.png" />
+    <Content Include="home\static\img\produtos.png" />
+    <Content Include="home\static\img\refeicao.png" />
+    <Content Include="home\static\img\retirada.png" />
+    <Content Include="home\static\img\sair.png" />
+    <Content Include="home\static\img\sair1.png" />
+    <Content Include="home\static\img\service-4.jpg" />
+    <Content Include="home\static\img\top_logo.png" />
+    <Content Include="home\static\img\winner_logo.png" />
+    <Content Include="home\static\js\main.js" />
+    <Content Include="home\static\js\map-custom.js" />
+    <Content Include="home\static\vendor\animate\animate.css" />
+    <Content Include="home\static\vendor\animsition\css\animsition.css" />
+    <Content Include="home\static\vendor\animsition\css\animsition.min.css" />
+    <Content Include="home\static\vendor\animsition\js\animsition.js" />
+    <Content Include="home\static\vendor\animsition\js\animsition.min.js" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="home\static\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="home\static\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="home\static\vendor\bootstrap\js\popper.js" />
+    <Content Include="home\static\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="home\static\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="home\static\vendor\countdowntime\countdowntime.js" />
+    <Content Include="home\static\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="home\static\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="home\static\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="home\static\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="home\static\vendor\daterangepicker\moment.js" />
+    <Content Include="home\static\vendor\daterangepicker\moment.min.js" />
+    <Content Include="home\static\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="home\static\vendor\jquery\jquery.js" />
+    <Content Include="home\static\vendor\jquery\jquery.min.js" />
+    <Content Include="home\static\vendor\jquery\jquery.min.map" />
+    <Content Include="home\static\vendor\jquery\jquery.slim.js" />
+    <Content Include="home\static\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="home\static\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="home\static\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="home\static\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="home\static\vendor\select2\select2.css" />
+    <Content Include="home\static\vendor\select2\select2.js" />
+    <Content Include="home\static\vendor\select2\select2.min.css" />
+    <Content Include="home\static\vendor\select2\select2.min.js" />
+    <Content Include="home\templates\base.html" />
+    <Content Include="home\templates\home\about.html" />
+    <Content Include="home\templates\home\contact.html" />
+    <Content Include="home\templates\home\home.html" />
+    <Content Include="home\templates\home\portfolio.html" />
+    <Content Include="instituicao\static\images\author.jpg" />
+    <Content Include="instituicao\static\images\become.jpg" />
+    <Content Include="instituicao\static\images\blackboard.svg" />
+    <Content Include="instituicao\static\images\books.svg" />
+    <Content Include="instituicao\static\images\comment_1.jpg" />
+    <Content Include="instituicao\static\images\comment_2.jpg" />
+    <Content Include="instituicao\static\images\contact_background.jpg" />
+    <Content Include="instituicao\static\images\courses_background.jpg" />
+    <Content Include="instituicao\static\images\course_1.jpg" />
+    <Content Include="instituicao\static\images\course_2.jpg" />
+    <Content Include="instituicao\static\images\course_3.jpg" />
+    <Content Include="instituicao\static\images\course_4.jpg" />
+    <Content Include="instituicao\static\images\course_5.jpg" />
+    <Content Include="instituicao\static\images\course_6.jpg" />
+    <Content Include="instituicao\static\images\course_7.jpg" />
+    <Content Include="instituicao\static\images\course_8.jpg" />
+    <Content Include="instituicao\static\images\course_9.jpg" />
+    <Content Include="instituicao\static\images\earth-globe.svg" />
+    <Content Include="instituicao\static\images\envelope.svg" />
+    <Content Include="instituicao\static\images\event_1.jpg" />
+    <Content Include="instituicao\static\images\event_2.jpg" />
+    <Content Include="instituicao\static\images\event_3.jpg" />
+    <Content Include="instituicao\static\images\exam.svg" />
+    <Content Include="instituicao\static\images\latest_1.jpg" />
+    <Content Include="instituicao\static\images\latest_2.jpg" />
+    <Content Include="instituicao\static\images\latest_3.jpg" />
+    <Content Include="instituicao\static\images\logo.png" />
+    <Content Include="instituicao\static\images\milestones_background.jpg" />
+    <Content Include="instituicao\static\images\milestone_1.svg" />
+    <Content Include="instituicao\static\images\milestone_2.svg" />
+    <Content Include="instituicao\static\images\milestone_3.svg" />
+    <Content Include="instituicao\static\images\milestone_4.svg" />
+    <Content Include="instituicao\static\images\mortarboard.svg" />
+    <Content Include="instituicao\static\images\news_1.jpg" />
+    <Content Include="instituicao\static\images\news_2.jpg" />
+    <Content Include="instituicao\static\images\news_3.jpg" />
+    <Content Include="instituicao\static\images\news_background.jpg" />
+    <Content Include="instituicao\static\images\phone-call.svg" />
+    <Content Include="instituicao\static\images\placeholder.svg" />
+    <Content Include="instituicao\static\images\professor.svg" />
+    <Content Include="instituicao\static\images\search_background.jpg" />
+    <Content Include="instituicao\static\images\slider_background.jpg" />
+    <Content Include="instituicao\static\images\smartphone.svg" />
+    <Content Include="instituicao\static\images\teachers_background.jpg" />
+    <Content Include="instituicao\static\images\teacher_1.jpg" />
+    <Content Include="instituicao\static\images\teacher_2.jpg" />
+    <Content Include="instituicao\static\images\teacher_3.jpg" />
+    <Content Include="instituicao\static\images\teacher_4.jpg" />
+    <Content Include="instituicao\static\images\teacher_5.jpg" />
+    <Content Include="instituicao\static\images\teacher_6.jpg" />
+    <Content Include="instituicao\static\images\testimonials_background.jpg" />
+    <Content Include="instituicao\static\images\testimonials_background_2.jpg" />
+    <Content Include="instituicao\static\images\testimonials_user.jpg" />
+    <Content Include="instituicao\static\js\contact_custom.js" />
+    <Content Include="instituicao\static\js\courses_custom.js" />
+    <Content Include="instituicao\static\js\custom.js" />
+    <Content Include="instituicao\static\js\elements_custom.js" />
+    <Content Include="instituicao\static\js\jquery-3.2.1.min.js" />
+    <Content Include="instituicao\static\js\news_custom.js" />
+    <Content Include="instituicao\static\js\news_post_custom.js" />
+    <Content Include="instituicao\static\js\teachers_custom.js" />
+    <Content Include="instituicao\static\plugins\easing\easing.js" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\css\fontawesome-all.css" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.eot" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.svg" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.ttf" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff2" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.eot" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.svg" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.ttf" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff2" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.eot" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.svg" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.ttf" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff" />
+    <Content Include="instituicao\static\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff2" />
+    <Content Include="instituicao\static\plugins\greensock\animation.gsap.min.js" />
+    <Content Include="instituicao\static\plugins\greensock\ScrollToPlugin.min.js" />
+    <Content Include="instituicao\static\plugins\greensock\TimelineMax.min.js" />
+    <Content Include="instituicao\static\plugins\greensock\TweenMax.min.js" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\ajax-loader.gif" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\animate.css" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\owl.carousel.css" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\owl.carousel.js" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\owl.theme.default.css" />
+    <Content Include="instituicao\static\plugins\OwlCarousel2-2.2.1\owl.video.play.png" />
+    <Content Include="instituicao\static\plugins\parallax.js-2.0.0\jquery.parallax.min.js" />
+    <Content Include="instituicao\static\plugins\progressbar\progressbar.min.js" />
+    <Content Include="instituicao\static\plugins\scrollmagic\ScrollMagic.min.js" />
+    <Content Include="instituicao\static\plugins\scrollTo\jquery.scrollTo.min.js" />
+    <Content Include="instituicao\static\styles\bootstrap4\bootstrap.min.css" />
+    <Content Include="instituicao\static\styles\bootstrap4\bootstrap.min.js" />
+    <Content Include="instituicao\static\styles\bootstrap4\popper.js" />
+    <Content Include="instituicao\static\styles\contact_responsive.css" />
+    <Content Include="instituicao\static\styles\contact_styles.css" />
+    <Content Include="instituicao\static\styles\courses_responsive.css" />
+    <Content Include="instituicao\static\styles\courses_styles.css" />
+    <Content Include="instituicao\static\styles\elements_responsive.css" />
+    <Content Include="instituicao\static\styles\elements_styles.css" />
+    <Content Include="instituicao\static\styles\main_styles.css" />
+    <Content Include="instituicao\static\styles\news_post_responsive.css" />
+    <Content Include="instituicao\static\styles\news_post_styles.css" />
+    <Content Include="instituicao\static\styles\news_responsive.css" />
+    <Content Include="instituicao\static\styles\news_styles.css" />
+    <Content Include="instituicao\static\styles\responsive.css" />
+    <Content Include="instituicao\static\styles\teachers_responsive.css" />
+    <Content Include="instituicao\static\styles\teachers_styles.css" />
+    <Content Include="instituicao\templates\instituicao\curso.html" />
+    <Content Include="instituicao\templates\instituicao\instituto.html" />
+    <Content Include="instituicao\templates\base_principal.html" />
+    <Content Include="instituicao\templates\instituicao\suporte.html" />
+    <Content Include="instituicao\templates\instituicao\pagina_principal.html" />
+    <Content Include="sistema_login\templates\sistema_login\erro.html" />
+    <Content Include="sistema_login\templates\sistema_login\login.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="site\templates\site\pagina_inicial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.6</Version>
+      <Description>env1 (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
