@@ -147,6 +147,10 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 LOGIN_REDIRECT_URL = '/sistema_login'
 
 
